@@ -1,0 +1,87 @@
+ul {
+  font-size: 18px;
+  font-variant: small-caps;
+
+  li {
+    position: relative;
+    cursor: pointer;
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: rgb(207, 56, 56);
+  }
+
+  li:nth-child(odd) {
+    background-color: rgb(231, 86, 86);
+  }
+
+  li input {
+    margin: 0 20px;
+  }
+}
+
+li.strike {
+  text-decoration: line-through;
+}
+
+button {
+  margin: 50px;
+  width: 80px;
+  height: 30px;
+  background-color: rgba(18, 18, 19, 0.116);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-holder {
+  position: relative;
+  width: 100%;
+  height: 60px;
+
+  .backButton {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.callout {
+  height: 350px;
+  width: 100%;
+  background-color: rgb(218, 61, 61);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    font-variant: small-caps;
+    position: relative;
+    z-index: 1;
+    font-size: 65px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+  }
+}
+
+.right {
+  position: absolute;
+  right: 15px;
+}
+
+.delete {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}

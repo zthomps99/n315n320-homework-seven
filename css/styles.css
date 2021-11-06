@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.siteWrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#app {
+  margin: 50px;
+}
+
+ul {
+  font-size: 18px;
+  font-variant: small-caps;
+}
+ul li {
+  position: relative;
+  cursor: pointer;
+  list-style-type: none;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  background-color: #cf3838;
+}
+ul li:nth-child(odd) {
+  background-color: #e75656;
+}
+ul li input {
+  margin: 0 20px;
+}
+
+li.strike {
+  text-decoration: line-through;
+}
+
+button {
+  margin: 50px;
+  width: 80px;
+  height: 30px;
+  background-color: rgba(18, 18, 19, 0.116);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-holder {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+.button-holder .backButton {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.callout {
+  height: 350px;
+  width: 100%;
+  background-color: #da3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.callout h1 {
+  font-variant: small-caps;
+  position: relative;
+  z-index: 1;
+  font-size: 65px;
+}
+.callout img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.right {
+  position: absolute;
+  right: 15px;
+}
+
+.delete {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
